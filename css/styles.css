@@ -1,5 +1,5 @@
 body {
-    background-image: url('tate2_mobile.png'), url('images/tate_bottom_mobile.jpg');
+    background-image: url('./assets/images/Tatebg.png'), url('./assets/images/tatemobilebg.png');
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: top center, bottom center;
