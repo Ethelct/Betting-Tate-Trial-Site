@@ -133,7 +133,7 @@ h1 {
 /* Media Query for Smartphones */
 @media (max-width: 768px) {
     body {
-        background-image: url('assets/images/tatemobilebg.png');
+        background-image: url('./assets/images/tatemobilebg.png');
         background-size: cover, cover;
         background-repeat: no-repeat, no-repeat;
         background-position: top center, bottom center;
@@ -160,7 +160,7 @@ h1 {
 /* Media Query for Tablets and Laptops */
 @media (min-width: 769px) {
     body {
-        background-image: url('assets/images/Tatebg.png');
+        background-image: url('./assets/images/Tatebg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
