@@ -1,0 +1,190 @@
+body {
+    background-image: url('tate2_mobile.png'), url('images/tate_bottom_mobile.jpg');
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.bet-section {
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 300px;
+    text-align: left;
+}
+
+.bet-option {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.bet-input {
+    width: calc(100% - 40px);
+    padding: 10px 40px 10px 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+}
+
+.eth-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+
+.bottom-note {
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.bet-button {
+    background-color: #1db954;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+.bet-button:hover {
+    background-color: #14833b;
+}
+
+.share-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.connect-wallet-button {
+    background-color: #9b59b6;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    position: relative;
+}
+
+.connect-wallet-button:hover {
+    background-color: #8e44ad;
+}
+
+.connect-wallet-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+
+.bet-info {
+    font-size: 0.7em;
+    color: #bbbbbb;
+    margin-top: 10px;
+}
+ 
+ .bet-odds {
+     font-size: 0.7em;
+    color: #fdfd06;
+    margin-top: 10px;
+ }
+
+/* Media Query for Smartphones */
+@media (max-width: 768px) {
+    body {
+        background-image: url('https://i.ibb.co/TmR731g/Tate2.png'), url('images/tate_bottom_mobile.jpg');
+        background-size: cover, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: top center, bottom center;
+        background-attachment: fixed;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .bet-section {
+        width: 95%;
+    }
+
+    .eth-icon {
+        width: 30px;
+        height: 30px;
+        right: 1px;
+        top: 15%;
+        transform: translateY(-50%);
+    }
+}
+
+/* Media Query for Tablets and Laptops */
+@media (min-width: 769px) {
+    body {
+        background-image: url('https://i.ibb.co/1bZjwxC/Tate1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .bet-section {
+        width: 80%;
+        max-width: 800px;
+    }
+
+    .bet-input {
+        font-size: 1.2em;
+    }
+
+    .bet-button {
+        font-size: 1.5em;
+        padding: 20px 40px;
+    }
+
+    .eth-icon {
+        width: 30px;
+        height: 30px;
+        right: 1px;
+        top: 15%;
+        transform: translateY(-50%);
+    }
+}
