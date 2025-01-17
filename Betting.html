@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Tate Case Betting</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.6.9/dist/ethers.umd.min.js"></script>
+
+</head>
+
+<body>
+    <button id="connectWalletButton" class="connect-wallet-button">
+        Connect Wallet
+        <img src="https://i.ibb.co/37Ry4xf/Metamask.png" alt="MetaMask" class="connect-wallet-icon">
+    </button>
+    <p id="walletAddressDisplay" style="color: #ffffff; margin-top: 10px;">Not connected</p>
+
+    <h1>Will Andrew Tate go to jail?</h1>
+
+    <!-- No Jail Section -->
+    <div class="bet-section">
+        <div class="bet-option">
+            <input type="number" class="bet-input" id="betNoJail" placeholder="Enter bet amount">
+            <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+            <button class="bet-button" data-address="0xfa0EC8386c1b6F924d73Dcf5d73Fa3cBAf072cee" onclick="placeBet('No Jail', this)">No Jail</button>
+        </div>
+        <div class="bet-info">
+            <p>Wallet: <span class="wallet-address">0xfa0EC8386c1b6F924d73Dcf5d73Fa3cBAf072cee</span></p>
+        </div>
+        <div class="bet-odds"    
+            <p>Pays 2x</p>
+        </div>
+    </div>
+
+    <!-- 0-10 years Section -->
+    <div class="bet-section">
+        <div class="bet-option">
+            <input type="number" class="bet-input" id="bet0to10" placeholder="Enter bet amount">
+            <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+            <button class="bet-button" data-address="0xFb16705743bFD007Cd8b554B693Bdfdab974D653" onclick="placeBet('0-10 years', this)">0-10 years</button>
+        </div>
+        <div class="bet-info">
+            <p>Wallet: <span class="wallet-address">0xFb16705743bFD007Cd8b554B693Bdfdab974D653</span></p>
+            </div>
+        <div class="bet-odds"    
+            <p>Pays 1.5x</p>
+        </div>
+    </div>
+
+    <!-- 10-20 years Section -->
+    <div class="bet-section">
+        <div class="bet-option">
+            <input type="number" class="bet-input" id="bet10to20" placeholder="Enter bet amount">
+            <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+            <button class="bet-button" data-address="0x4269d40E1de13AEb5C39e62C1EB3fFAa0bDDFfd8" onclick="placeBet('10-20 years', this)">10-20 years</button>
+        </div>
+        <div class="bet-info">
+            <p>Wallet: <span class="wallet-address">0x4269d40E1de13AEb5C39e62C1EB3fFAa0bDDFfd8</span></p>
+            </div>
+        <div class="bet-odds"    
+            <p>Pays 1.5x</p>
+        </div>
+    </div>
+
+       <!-- 20-30 years Section -->
+    <div class="bet-section">
+        <div class="bet-option">
+            <input type="number" class="bet-input" id="bet20to30" placeholder="Enter bet amount">
+            <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+            <button class="bet-button" data-address="0x8083E8f5b9dAf6c4614096d18af140eeB6A31b13" onclick="placeBet('20-30 years', this)">20-30 years</button>
+        </div>
+        <div class="bet-info">
+            <p>Wallet: <span class="wallet-address">0x8083E8f5b9dAf6c4614096d18af140eeB6A31b13</span></p>
+           </div>
+        <div class="bet-odds"    
+            <p>Pays 1.3x</p>
+        </div>
+    </div>
+
+    <!-- 30-40 years Section -->
+    <div class="bet-section">
+        <div class="bet-option">
+            <input type="number" class="bet-input" id="bet30to40" placeholder="Enter bet amount">
+            <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+            <button class="bet-button" data-address="0xB187CBe22812FA21ECe109EB82dD37BE89Be5B40" onclick="placeBet('30-40 years', this)">30-40 years</button>
+        </div>
+        <div class="bet-info">
+            <p>Wallet: <span class="wallet-address">0xB187CBe22812FA21ECe109EB82dD37BE89Be5B40</span></p>
+            </div>
+        <div class="bet-odds"    
+            <p>Pays 1.6x</p>
+        </div>
+    </div>
+
+    <!-- 40-50 years Section -->
+    <div class="bet-section">
+        <div class="bet-option">
+            <input type="number" class="bet-input" id="bet40to50" placeholder="Enter bet amount">
+            <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+            <button class="bet-button" data-address="0x5B51E7F1f0BfBf7Bae9A05b40a804278226aD9cD" onclick="placeBet('40-50 years', this)">40-50 years</button>
+        </div>
+        <div class="bet-info">
+            <p>Wallet: <span class="wallet-address">0x5B51E7F1f0BfBf7Bae9A05b40a804278226aD9cD</span></p>
+           </div>
+        <div class="bet-odds"    
+            <p>Pays 1.9x</p>
+        </div>
+    </div>
+
+    <!-- 50-60 years Section -->
+    <div class="bet-section">
+        <div class="bet-option">
+            <input type="number" class="bet-input" id="bet50to60" placeholder="Enter bet amount">
+            <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+            <button class="bet-button" data-address="0x2AcC8bF0f9bF3e92C7C3eC64e6d29Dc0aC8d3C39" onclick="placeBet('50-60 years', this)">50-60 years</button>
+        </div>
+        <div class="bet-info">
+            <p>Wallet: <span class="wallet-address">0x2AcC8bF0f9bF3e92C7C3eC64e6d29Dc0aC8d3C39</span></p>
+            </div>
+        <div class="bet-odds"    
+            <p>Pays 2.5x</p>
+        </div>
+    </div>
+
+    <!-- 60-70 years Section -->
+    <div class="bet-section">
+        <div class="bet-option">
+            <input type="number" class="bet-input" id="bet60to70" placeholder="Enter bet amount">
+            <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+            <button class="bet-button" data-address="0x8C7F2DabBf7Eb61Bf1B9eF1C8a3d9e57EAb2D736" onclick="placeBet('60-70 years', this)">60-70 years</button>
+        </div>
+        <div class="bet-info">
+            <p>Wallet: <span class="wallet-address">0x8C7F2DabBf7Eb61Bf1B9eF1C8a3d9e57EAb2D736</span></p>
+            </div>
+        <div class="bet-odds"    
+            <p>Pays 3x</p>
+        </div>
+    </div>
+
+    <!-- 70-80 years Section -->
+    <div class="bet-section">
+        <div class="bet-option">
+            <input type="number" class="bet-input" id="bet70to80" placeholder="Enter bet amount">
+            <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+            <button class="bet-button" data-address="0x9E1F2E43dF5eF4BAbCd56cD7c4B1D7bDAE52F8A5" onclick="placeBet('70-80 years', this)">70-80 years</button>
+        </div>
+        <div class="bet-info">
+            <p>Wallet: <span class="wallet-address">0x9E1F2E43dF5eF4BAbCd56cD7c4B1D7bDAE52F8A5</span></p>
+            </div>
+        <div class="bet-odds"    
+            <p>Pays 3.7x</p>
+        </div>
+    </div>
+
+    <!-- 80-90 years Section -->
+    <div class="bet-section">
+        <div class="bet-option">
+            <input type="number" class="bet-input" id="bet80to90" placeholder="Enter bet amount">
+            <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+            <button class="bet-button" data-address="0x7F1E2F3d4B7B1cB5Fb2a4D6D5B9E3d5B8dC4F2E3" onclick="placeBet('80-90 years', this)">80-90 years</button>
+        </div>
+        <div class="bet-info">
+            <p>Wallet: <span class="wallet-address">0x7F1E2F3d4B7B1cB5Fb2a4D6D5B9E3d5B8dC4F2E3</span></p>
+            </div>
+        <div class="bet-odds"    
+            <p>Pays 4.8x</p>
+        </div>
+    </div>
+
+    <!-- 90-100 years Section -->
+    <div class="bet-section">
+        <div class="bet-option">
+            <input type="number" class="bet-input" id="bet90to100" placeholder="Enter bet amount">
+            <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+            <button class="bet-button" data-address="0x4A5E7E4e4E4E4E6bB8E6f9E8C8d7C7bD5A8e4E3C" onclick="placeBet('90-100 years', this)">90-100 years</button>
+        </div>
+        <div class="bet-info">
+            <p>Wallet: <span class="wallet-address">0x4A5E7E4e4E4E4E6bB8E6f9E8C8d7C7bD5A8e4E3C</span></p>
+            </div>
+        <div class="bet-odds"    
+            <p>Pays 6x</p>
+        </div>
+    </div>
+
+  <!-- Life in Prison Section -->
+<div class="bet-section">
+    <div class="bet-option">
+        <input type="number" class="bet-input" id="betLifeInPrison" placeholder="Enter bet amount">
+        <img src="https://i.ibb.co/7XH0Z49/Eth.png" alt="Ethereum" class="eth-icon">
+        <button class="bet-button" data-address="0x1B2D3F4G5H6I7J8K9L0M1N2O3P4Q5R6S7T8U9V0W" onclick="placeBet('Life in Prison', this)">Life in Prison</button>
+    </div>
+    <div class="bet-info">
+        <p>Wallet: <span class="wallet-address">0x1B2D3F4G5H6I7J8K9L0M1N2O3P4Q5R6S7T8U9V0W</span></p>
+        </div>
+        <div class="bet-odds"    
+            <p>Pays 10x</p>
+        </div>
+    </div>
+
+
+<!-- Note at the bottom of the page -->
+<div class="bottom-note">
+   Note: 1% of the betting pool will be sent to either support Andrew or the case against him. This will depend on the number of users betting correspondingly on his innocence or guilt. Please gamble responsibly.
+</div>
+<script src="bettingApp.js"></script>
+</body>
+</html>
