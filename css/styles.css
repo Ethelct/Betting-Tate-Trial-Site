@@ -133,7 +133,7 @@ h1 {
 /* Media Query for Smartphones */
 @media (max-width: 768px) {
     body {
-        background-image: url('assets/images/tatemobilebg.png'), url('images/tate_bottom_mobile.jpg');
+        background-image: url('assets/images/tatemobilebg.png');
         background-size: cover, cover;
         background-repeat: no-repeat, no-repeat;
         background-position: top center, bottom center;
